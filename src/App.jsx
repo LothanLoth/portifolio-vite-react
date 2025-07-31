@@ -3,21 +3,21 @@ import TypeEffect from "./TypeEffect.jsx";
 
 import { useEffect, useState } from "react";
 
-import homeIcon from "/dist/assets/home.png";
-import aboutIcon from "/dist/assets/about.png";
-import skillsIcon from "/dist/assets/e-book.png";
-import contactIcon from "/dist/assets/mail.png";
-import linkedinIcon from "/dist/assets/linkedin.png";
-import githubIcon from "/dist/assets/github.png";
-import lothImage from "/dist/assets/loth.png";
+import homeIcon from "./assets/home.png";
+import aboutIcon from "./assets/about.png";
+import skillsIcon from "./assets/e-book.png";
+import contactIcon from "./assets/mail.png";
+import linkedinIcon from "./assets/linkedin.png";
+import githubIcon from "./assets/github.png";
+import lothImage from "./assets/loth.png";
 
-import htmlIcon from "/dist/assets/html.png";
-import cssIcon from "/dist/assets/css.png";
-import jsIcon from "/dist/assets/js.png";
-import reactIcon from "/dist/assets/react.png";
-import githubSkillIcon from "/dist/assets/github.png";
-import nodeIcon from "/dist/assets/node.png";
-import tailwindIcon from "/dist/assets/tailwind.webp";
+import htmlIcon from "./assets/html.png";
+import cssIcon from "./assets/css.png";
+import jsIcon from "./assets/js.png";
+import reactIcon from "./assets/react.png";
+import githubSkillIcon from "./assets/github.png";
+import nodeIcon from "./assets/node.png";
+import tailwindIcon from "./assets/tailwind.webp";
 
 function Footer() {
   return (
