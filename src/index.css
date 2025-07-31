@@ -24,25 +24,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  background-color: var(--background-color-secundary);
+}
+
 body {
   overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 .pri-font {
