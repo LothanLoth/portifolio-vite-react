@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Montserrat";
+  line-height: 1.5;
+  font-weight: 400;
+
+  --primary-font: "Montserrat";
+  --secundary-font: "Work-Sans";
+
+  --special-color-primary: #f7eb00;
+  --special-color-sec: #fea3c2;
+  --special-color-ter: #213547;
+
+  --background-color: #111111;
+  --background-color-secundary: black;
+
+  color-scheme: light dark;
+  background-color: var(--background-color-secundary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.pri-font {
+  font-family: var(--primary-font);
+}
+
+.sec-font {
+  font-family: var(--secundary-font);
+}
