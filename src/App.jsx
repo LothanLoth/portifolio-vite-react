@@ -3,9 +3,25 @@ import TypeEffect from "./TypeEffect.jsx";
 
 import { useEffect, useState } from "react";
 
+import homeIcon from "./assets/home.png";
+import aboutIcon from "./assets/about.png";
+import skillsIcon from "./assets/e-book.png";
+import contactIcon from "./assets/mail.png";
+import linkedinIcon from "./assets/linkedin.png";
+import githubIcon from "./assets/github.png";
+import lothImage from "./assets/loth.png";
+
+import htmlIcon from "./assets/html.png";
+import cssIcon from "./assets/css.png";
+import jsIcon from "./assets/js.png";
+import reactIcon from "./assets/react.png";
+import githubSkillIcon from "./assets/github.png";
+import nodeIcon from "./assets/node.png";
+import tailwindIcon from "./assets/tailwind.webp";
+
 function Footer() {
   return (
-    <footer className="bg-black text-gray-400 py-6 mt-10 text-center border-t border-yellow-500">
+    <footer className="bg-black py-6 mt-10 text-center border-t border-yellow-500">
       <p className="text-sm">
         © {new Date().getFullYear()} Marcos Cabral. Todos os direitos
         reservados.
@@ -137,7 +153,7 @@ function IconButton({ path, texto, link }) {
       <li className="">
         <a href={link} className="flex flex-col items-center group">
           <img
-            src={`/src/assets/${path}`}
+            src={path}
             alt=""
             className="w-10 transition-transform delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
           />
@@ -156,7 +172,7 @@ function IntroImage({ path }) {
       className="absolute md:inset-0 md:w-[100%] flex md:items-center md:z-0 md:left-[25%]
      items-center z-0 align-middle justify-center top-50"
     >
-      <img src={`/src/assets/${path}`} alt="" className="md:w-[40%] w-[85%]" />
+      <img src={path} alt="" className="md:w-[40%] w-[85%]" />
     </div>
   );
 }
@@ -211,13 +227,13 @@ function ScreenMax({ children }) {
 
 function SkillsSection() {
   const skills = [
-    { name: "HTML", icon: "html.png" },
-    { name: "CSS", icon: "css.png" },
-    { name: "JavaScript", icon: "js.png" },
-    { name: "React JS", icon: "react.png" },
-    { name: "GitHub", icon: "github.png" },
-    { name: "Node JS", icon: "node.png" },
-    { name: "Tailwind CSS", icon: "tailwind.webp" },
+    { name: "HTML", icon: htmlIcon },
+    { name: "CSS", icon: cssIcon },
+    { name: "JavaScript", icon: jsIcon },
+    { name: "React JS", icon: reactIcon },
+    { name: "GitHub", icon: githubIcon },
+    { name: "Node JS", icon: nodeIcon },
+    { name: "Tailwind CSS", icon: tailwindIcon },
 
   ];
 
@@ -242,7 +258,7 @@ function SkillsSection() {
               className="bg-black hover:bg-yellow-500 hover:text-black transition-all duration-300 rounded-md p-4 flex flex-col items-center justify-center shadow-md"
             >
               <img
-                src={`/src/assets/${skill.icon}`}
+                src={skill.icon}
                 alt={skill.name}
                 className="w-12 h-12 mb-2"
               />
@@ -336,23 +352,23 @@ function App() {
           >
             <Navbar>
               <ScrollSidebar />
-              <NavbarItem link="#inicio" source={"/src/assets/home.png"} alt="">
+              <NavbarItem link="#inicio" source={homeIcon} alt="">
                 Inicio
               </NavbarItem>
-              <NavbarItem link="#sobre" source={"/src/assets/about.png"} alt="">
+              <NavbarItem link="#sobre" source={aboutIcon} alt="">
                 Sobre Mim
               </NavbarItem>
               <NavbarItem
                 link="#skills"
-                source={"/src/assets/e-book.png"}
+                source={skillsIcon}
                 alt=""
               >
                 Habilidades
               </NavbarItem>
               <NavbarItem
                 link="#contato"
-                source={"/src/assets/mail.png"}
-                alt=""
+                source={contactIcon}
+                alt="Contact Icon"
               >
                 Contato
               </NavbarItem>
@@ -372,18 +388,18 @@ function App() {
               </CardBox>
             </main>
           </Intro>
-          <IntroImage path="loth.png" />
+          <IntroImage path={`${lothImage}`} />
 
           <ul className="flex flex-row md:gap-8 md:mt-4 md:justify-end relative md:top-170 md:right-90 z-50 justify-center align-bottom top-170 gap-10">
             <IconButton
               link="https://www.linkedin.com/in/marcos-guilherme-cabral-35154926a/"
-              path="linkedin.png"
+              path={linkedinIcon}
               texto="Linkedin"
               alt="Ícone do Linkedin"
             />
             <IconButton
               link="https://github.com/LothanLoth"
-              path="github.png"
+              path={githubSkillIcon}
               alt="Ícone do GitHub"
               texto="Github"
             />
